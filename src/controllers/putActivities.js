@@ -3,14 +3,15 @@ const {Activities} = require('../db')
 module.exports = async(req,res)=>{
 try {
     const {ID} = req.params
-    const { name, difficulty, duration, season } = req.body;
+    const { name, difficulty, duration, season, idCountry } = req.body;
     const activity = await Activities.findOne({where:{ID}});
     
     const data = {
         name,
         difficulty,
         duration,
-        season
+        season,
+        idCountry
       };
 
       activity
