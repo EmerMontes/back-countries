@@ -11,7 +11,7 @@ try {
         difficulty,
         duration,
         season,
-        idCountry
+        Countries : idCountry
       };
 
       activity
